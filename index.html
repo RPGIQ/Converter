@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Unit Converter & Equation Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Unit Converter & Equation Solver</h1>
+
+    <!-- قسم تحويل الوحدات -->
+    <div class="container" id="unit-converter">
+        <h2>Unit Converter</h2>
+        <select id="unitType" class="fade-in">
+            <option value="length">Length</option>
+            <option value="weight">Weight</option>
+            <option value="temperature">Temperature</option>
+            <option value="volume">Volume</option>
+            <option value="time">Time</option>
+            <option value="speed">Speed</option>
+        </select>
+
+        <input type="number" id="inputValue" placeholder="Enter value" class="fade-in">
+        <select id="fromUnit" class="fade-in"></select>
+        <select id="toUnit" class="fade-in"></select>
+        <button onclick="convertUnit()" class="fade-in">Convert</button>
+        <div id="conversionResult" class="fade-in"></div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
